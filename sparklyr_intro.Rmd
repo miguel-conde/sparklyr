@@ -28,7 +28,7 @@ if (!require("sparklyr")) {
 And a local version of Spark for development purposes:
 ```{r}
 if (nrow(spark_installed_versions()) == 0)
-  spark_install(version = "1.6.2")
+  spark_install(version = "2.1.0")
 ```
  Pay attention to the IDE's several enhancements for interacting with Spark. You should find a new Spark pane within the IDE. This pane includes a New Connection dialog which can be used to make connections to local or remote Spark instances.
  
