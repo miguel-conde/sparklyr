@@ -1,3 +1,5 @@
+# http://h2o-release.s3.amazonaws.com/h2o/rel-yau/10/index.html
+
 # The following two commands remove any previously installed H2O packages for R.
 if ("package:h2o" %in% search()) { detach("package:h2o", unload=TRUE) }
 if ("h2o" %in% rownames(installed.packages())) { remove.packages("h2o") }
@@ -10,7 +12,7 @@ for (pkg in pkgs) {
 
 # Now we download, install and initialize the H2O package for R.
 install.packages("h2o", type="source", 
-                 repos="http://h2o-release.s3.amazonaws.com/h2o/rel-xu/3/R")
+                 repos="http://h2o-release.s3.amazonaws.com/h2o/rel-yau/10/R")
 
 # Finally, let's load H2O and start up an H2O cluster
 library(h2o)
